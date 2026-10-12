@@ -2,6 +2,11 @@
 
 A simple full-stack task manager: create tasks, move them through statuses (To do → Doing → Done), filter the list and delete tasks. Data is stored in MySQL and served by a small PHP REST API, with a React frontend.
 
+## Screenshots
+
+![Task list](screenshots/task-list.png)
+![Filter by status](screenshots/filter-doing.png)
+
 ## Features
 
 - List all tasks (newest first)
@@ -47,7 +52,7 @@ taskflow/
 ```bash
 cd backend
 mysql -u root < schema.sql   # create DB + sample data
-php -S localhost:8000        # start the API
+php -S localhost:8000 index.php   # start the API (index.php is the router)
 ```
 
 **2. Frontend** — see [frontend/README.md](frontend/README.md):
